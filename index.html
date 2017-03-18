@@ -158,6 +158,453 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-qshell" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/19/qshell/">qshell</a>
+    </h1>
+  
+
+        <a href="/2017/03/19/qshell/" class="archive-article-date">
+  	<time datetime="2017-03-18T16:08:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-19</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>qshell是利用<a href="http://developer.qiniu.com" target="_blank" rel="external">七牛文档上公开的API</a>实现的一个方便开发者测试和使用七牛API服务的命令行工具。该工具设计和开发的主要目的就是帮助开发者快速解决问题。目前该工具融合了七牛存储，CDN，以及其他的一些七牛服务中经常使用到的方法对应的便捷命令，比如b64decode，就是用来解码七牛的URL安全的Base64编码用的，所以这是一个面向开发者的工具，任何新的被认为适合加到该工具中的命令需求，都可以在<a href="https://github.com/qiniu/qshell/issues" target="_blank" rel="external">ISSUE列表</a>里面提出来，我们会尽快评估实现，以帮助大家更好地使用七牛服务。<br><a href="https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l" target="_blank" rel="external"><img src="https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l.png" alt="asciicast"></a></p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>该工具使用Go语言编写而成，当然为了方便不熟悉Go或者急于使用工具来解决问题的开发者，我们提供了预先编译好的各主流操作系统平台的二进制文件供大家下载使用，由于平台的多样性，我们把这些二进制打包放到一个文件里面，请大家根据下面的说明各自选择合适的版本来使用。在文档中的例子里面，为了方便，我们统一使用<code>qshell</code>这个命令来做介绍。</p>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>支持平台</th>
+<th>链接</th>
+<th>更新日志</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>qshell v2.0.5</td>
+<td>Linux (32, 64位，arm平台), Windows(32, 64位), Mac OSX(32, 64位)</td>
+<td><a href="http://devtools.qiniu.com/qshell-v2.0.5.zip" target="_blank" rel="external">下载</a></td>
+<td><a href="CHANGELOG.md">查看</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>该工具由于是命令行工具，所以只需要从上面的下载链接下载zip包之后解压即可使用。其中文件名和对应系统关系如下：</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>qshell_linux_386</td>
+<td>Linux 32位系统</td>
+</tr>
+<tr>
+<td>qshell_linux_amd64</td>
+<td>Linux 64位系统</td>
+</tr>
+<tr>
+<td>qshell_linux_arm</td>
+<td>Linux ARM CPU</td>
+</tr>
+<tr>
+<td>qshell_windows_386.exe</td>
+<td>Windows 32位系统</td>
+</tr>
+<tr>
+<td>qshell_windows_amd64.exe</td>
+<td>Windows 64位系统</td>
+</tr>
+<tr>
+<td>qshell_darwin_386</td>
+<td>Mac 32位系统，这种系统很老了</td>
+</tr>
+<tr>
+<td>qshell_darwin_amd64</td>
+<td>Mac 64位系统，主流的系统</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Linux和Mac平台</strong></p>
+<p>（1）权限<br>如果在Linux或者Mac系统上遇到<code>Permission Denied</code>的错误，请使用命令<code>chmod +x qshell</code>来为文件添加可执行权限。这里的<code>qshell</code>是上面文件重命名之后的简写。</p>
+<p>（2）任何位置运行<br>对于Linux或者Mac，如果希望能够在任何位置都可以执行，那么可以把<code>qshell</code>所在的目录加入到环境变量<code>$PATH</code>中去。假设<code>qshell</code>命令被解压到路径<code>/home/jemy/tools</code>目录下面，那么我们可以把如下的命令写入到你所使用的bash所对应的配置文件中，如果是<code>/bin/bash</code>，那么就是<code>~/.bashrc</code>文件，如果是<code>/bin/zsh</code>，那么就是<code>~/.zshrc</code>文件中。写入的内容为：</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=<span class="variable">$PATH</span><span class="symbol">:/home/jemy/tools</span></div></pre></td></tr></table></figure>
+<p>保存完毕之后，可以通过两种方式立即生效，其一为输入<code>source ~/.zshrc</code>或者<code>source ~/.bashrc</code>来使配置立即生效，或者完全关闭命令行，然后重新打开一个即可，接下来就可以在任何位置使用<code>qshell</code>命令了。</p>
+<p><strong>Windows平台</strong></p>
+<p>（1）闪退问题<br>本工具是一个命令行工具，在Windows下面请先打开命令行终端，然后输入工具名称执行，不要双击打开，否则会出现闪退现象。</p>
+<p>（2）任何位置运行<br>如果你希望可以在任意目录下使用<code>qshell</code>，请将<code>qshell</code>工具可执行文件所在目录添加到系统的环境变量中。由于Windows系统是图形界面，所以方便一点。假设<code>qshell.exe</code>命令被解压到路径<code>E:\jemy\tools</code>目录下面，那么我们把这个目录放到系统的环境变量<code>PATH</code>里面。</p>
+<p><img src="http://devtools.qiniu.com/windows-qshell-path-settings.png" alt="windows-qshell-path-settings.png"></p>
+<h2 id="密钥设置"><a href="#密钥设置" class="headerlink" title="密钥设置"></a>密钥设置</h2><p>该工具有两类命令，一类需要鉴权，另一类不需要。</p>
+<p>需要鉴权的命令都需要依赖七牛账号下的 <code>AccessKey</code> 和 <code>SecretKey</code>。所以这类命令运行之前，需要使用 <code>account</code> 命令来设置下 <code>AccessKey</code> ，<code>SecretKey</code> 。</p>
+<p><strong>单用户模式：</strong></p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>qshell account ak sk</div></pre></td></tr></table></figure>
+<p><strong>多用户模式：</strong></p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>qshell -m account ak sk</div></pre></td></tr></table></figure>
+<h2 id="多用户模式"><a href="#多用户模式" class="headerlink" title="多用户模式"></a>多用户模式</h2><p>和其他的工具一样，本工具也会在使用的过程中，向本地磁盘写入一些文件，比如上面的<code>account</code>设置的 <code>AccessKey</code> 和 <code>SecretKey</code> 都是加密后保存在本地磁盘上的。另外还有<code>qupload</code>和<code>qdownload</code>功能也会向本地磁盘写入一些文件。</p>
+<p>默认情况下，工具的使用模式是单用户模式，用户的所有信息写入到磁盘<code>$HOME_DIR/.qshell</code>下面。即如果你用<code>account</code>设置了新的密钥，那么这个新的密钥将覆盖旧的密钥。这个<code>$HOME_DIR</code>在Linux或者Mac下就是<code>~</code>所表示的目录。如果是Windows下则是<code>C:\Users\jemy</code>这样的路径。</p>
+<p>但是有些情况下，我们可能拥有多个账号，比如同时拥有测试环境的账号和线上环境的账号，这种情况下，怎么让<code>qshell</code>同时支持多组<code>AccessKey</code>和<code>SecretKey</code>的设置呢？</p>
+<p>为了解决这个问题，我们引入了选项<code>-m</code>。当在使用<code>qshell</code>的时候，指定该选项的话，就会切换到多用户模式下，在这种模式下，工具会把所有的临时文件都写到工具执行的目录。</p>
+<p>基于上面的功能，我们可以创建一些专用的目录，用来切换到<code>qshell</code>的多用户模式运行。假设本地有如目录<code>/Users/jemy/Temp/qshell/workdir</code>，这个目录下分别有<code>env_dev</code>和<code>env_prod</code>两种环境的账号。</p>
+<p>我们分别在目录<code>env_dev</code>和<code>env_prod</code>目录下，运行<code>qshell -m account ak sk</code>来设置不同账号的密钥对，结果如下：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ tree -<span class="selector-tag">a</span></div><div class="line"></div><div class="line">├── env_dev</div><div class="line">│   └── <span class="selector-class">.qshell</span></div><div class="line">│       └── account<span class="selector-class">.json</span></div><div class="line">└── env_prod</div><div class="line">    └── <span class="selector-class">.qshell</span></div><div class="line">        └── account.json</div></pre></td></tr></table></figure>
+<p>这样其他的依赖<code>AccessKey</code>和<code>SecretKey</code>的命令都可以使用<code>-m</code>选项在这个目录下执行命令，例如<code>stat</code>获取文件信息：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd <span class="regexp">/Users/</span>jemy<span class="regexp">/Temp/</span>qshell<span class="regexp">/workdir/</span>env_dev</div><div class="line">$ qshell -m stat bucket key</div></pre></td></tr></table></figure>
+<h2 id="命令选项"><a href="#命令选项" class="headerlink" title="命令选项"></a>命令选项</h2><p>该工具还有一些有用的选项参数如下：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-d</td>
+<td>设置是否输出DEBUG日志，如果指定这个选项，则输出DEBUG级别的日志</td>
+</tr>
+<tr>
+<td>-m</td>
+<td>切换到多用户模式，这样所有的临时文件写入都在命令运行的目录下</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>打印命令列表帮助信息，遇到参数忘记的情况下，可以使用该命令</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>打印工具版本，反馈问题的时候，请提前告知工具对应版本号</td>
+</tr>
+</tbody>
+</table>
+<h2 id="命令列表"><a href="#命令列表" class="headerlink" title="命令列表"></a>命令列表</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>类别</th>
+<th>描述</th>
+<th>详细</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>account</td>
+<td>账号</td>
+<td>设置或显示当前用户的<code>AccessKey</code>和<code>SecretKey</code></td>
+<td><a href="docs/account.md">文档</a></td>
+</tr>
+<tr>
+<td>dircache</td>
+<td>存储</td>
+<td>输出本地指定路径下所有的文件列表</td>
+<td><a href="docs/dircache.md">文档</a></td>
+</tr>
+<tr>
+<td>listbucket</td>
+<td>存储</td>
+<td>列举七牛空间里面的所有文件</td>
+<td><a href="docs/listbucket.md">文档</a></td>
+</tr>
+<tr>
+<td>prefop</td>
+<td>存储</td>
+<td>查询七牛数据处理的结果</td>
+<td><a href="docs/prefop.md">文档</a></td>
+</tr>
+<tr>
+<td>fput</td>
+<td>存储</td>
+<td>以文件表单的方式上传一个文件</td>
+<td><a href="docs/fput.md">文档</a></td>
+</tr>
+<tr>
+<td>rput</td>
+<td>存储</td>
+<td>以分片上传的方式上传一个文件</td>
+<td><a href="docs/rput.md">文档</a></td>
+</tr>
+<tr>
+<td>qupload</td>
+<td>存储</td>
+<td>同步数据到七牛空间， 带同步进度信息，和数据上传完整性检查</td>
+<td><a href="docs/qupload.md">文档</a></td>
+</tr>
+<tr>
+<td>qdownload</td>
+<td>存储</td>
+<td>从七牛空间同步数据到本地，支持只同步某些前缀的文件，支持增量同步</td>
+<td><a href="docs/qdownload.md">文档</a></td>
+</tr>
+<tr>
+<td>stat</td>
+<td>存储</td>
+<td>查询七牛空间中一个文件的基本信息</td>
+<td><a href="docs/stat.md">文档</a></td>
+</tr>
+<tr>
+<td>delete</td>
+<td>存储</td>
+<td>删除七牛空间中的一个文件</td>
+<td><a href="docs/delete.md">文档</a></td>
+</tr>
+<tr>
+<td>move</td>
+<td>存储</td>
+<td>移动或重命名七牛空间中的一个文件</td>
+<td><a href="docs/move.md">文档</a></td>
+</tr>
+<tr>
+<td>copy</td>
+<td>存储</td>
+<td>复制七牛空间中的一个文件</td>
+<td><a href="docs/copy.md">文档</a></td>
+</tr>
+<tr>
+<td>chgm</td>
+<td>存储</td>
+<td>修改七牛空间中的一个文件的MimeType</td>
+<td><a href="docs/chgm.md">文档</a></td>
+</tr>
+<tr>
+<td>fetch</td>
+<td>存储</td>
+<td>从Internet上抓取一个资源并存储到七牛空间中</td>
+<td><a href="docs/fetch.md">文档</a></td>
+</tr>
+<tr>
+<td>sync</td>
+<td>存储</td>
+<td>从Internet上抓取一个资源并存储到七牛空间中，适合大文件的场合</td>
+<td><a href="docs/sync.md">文档</a></td>
+</tr>
+<tr>
+<td>prefetch</td>
+<td>存储</td>
+<td>更新七牛空间中从源站镜像过来的文件</td>
+<td><a href="docs/prefetch.md">文档</a></td>
+</tr>
+<tr>
+<td>batchdelete</td>
+<td>存储</td>
+<td>批量删除七牛空间中的文件，可以直接根据<code>listbucket</code>的结果来删除</td>
+<td><a href="docs/batchdelete.md">文档</a></td>
+</tr>
+<tr>
+<td>batchchgm</td>
+<td>存储</td>
+<td>批量修改七牛空间中文件的MimeType</td>
+<td><a href="docs/batchchgm.md">文档</a></td>
+</tr>
+<tr>
+<td>batchcopy</td>
+<td>存储</td>
+<td>批量复制七牛空间中的文件到另一个空间</td>
+<td><a href="docs/batchcopy.md">文档</a></td>
+</tr>
+<tr>
+<td>batchmove</td>
+<td>存储</td>
+<td>批量移动七牛空间中的文件到另一个空间</td>
+<td><a href="docs/batchmove.md">文档</a></td>
+</tr>
+<tr>
+<td>batchrename</td>
+<td>存储</td>
+<td>批量重命名七牛空间中的文件</td>
+<td><a href="docs/batchrename.md">文档</a></td>
+</tr>
+<tr>
+<td>batchsign</td>
+<td>存储</td>
+<td>批量根据资源的公开外链生成资源的私有外链</td>
+<td><a href="docs/batchsign.md">文档</a></td>
+</tr>
+<tr>
+<td>privateurl</td>
+<td>存储</td>
+<td>生成私有空间资源的访问外链</td>
+<td><a href="docs/privateurl.md">文档</a></td>
+</tr>
+<tr>
+<td>saveas</td>
+<td>存储</td>
+<td>实时处理的saveas链接快捷生成工具</td>
+<td><a href="docs/saveas.md">文档</a></td>
+</tr>
+<tr>
+<td>reqid</td>
+<td>存储</td>
+<td>七牛自定义头部X-Reqid解码工具</td>
+<td><a href="docs/reqid.md">文档</a></td>
+</tr>
+<tr>
+<td>buckets</td>
+<td>存储</td>
+<td>获取当前账号下所有的空间名称</td>
+<td><a href="docs/buckets.md">文档</a></td>
+</tr>
+<tr>
+<td>domains</td>
+<td>存储</td>
+<td>获取指定空间的所有关联域名</td>
+<td><a href="docs/domains.md">文档</a></td>
+</tr>
+<tr>
+<td>qetag</td>
+<td>存储</td>
+<td>根据七牛的qetag算法来计算文件的hash</td>
+<td><a href="docs/qetag.md">文档</a></td>
+</tr>
+<tr>
+<td>m3u8delete</td>
+<td>存储</td>
+<td>根据流媒体播放列表文件删除七牛空间中的流媒体切片</td>
+<td><a href="docs/m3u8delete.md">文档</a></td>
+</tr>
+<tr>
+<td>m3u8replace</td>
+<td>存储</td>
+<td>修改流媒体播放列表文件中的切片引用域名</td>
+<td><a href="docs/m3u8replace.md">文档</a></td>
+</tr>
+<tr>
+<td>cdnrefresh</td>
+<td>CDN</td>
+<td>批量刷新cdn的访问外链或目录</td>
+<td><a href="docs/cdnrefresh.md">文档</a></td>
+</tr>
+<tr>
+<td>cdnprefetch</td>
+<td>CDN</td>
+<td>批量预取cdn的访问外链</td>
+<td><a href="docs/cdnprefetch.md">文档</a></td>
+</tr>
+<tr>
+<td>b64encode</td>
+<td>工具</td>
+<td>base64编码工具，可选是否使用UrlSafe方式，默认UrlSafe</td>
+<td><a href="docs/b64encode.md">文档</a></td>
+</tr>
+<tr>
+<td>b64decode</td>
+<td>工具</td>
+<td>base64解码工具，可选是否使用UrlSafe方式，默认UrlSafe</td>
+<td><a href="docs/b64decode.md">文档</a></td>
+</tr>
+<tr>
+<td>urlencode</td>
+<td>工具</td>
+<td>url编码工具</td>
+<td><a href="docs/urlencode.md">文档</a></td>
+</tr>
+<tr>
+<td>urldecode</td>
+<td>工具</td>
+<td>url解码工具</td>
+<td><a href="docs/urldecode.md">文档</a></td>
+</tr>
+<tr>
+<td>ts2d</td>
+<td>工具</td>
+<td>将timestamp(单位秒)转为UTC+8:00中国日期，主要用来检查上传策略的deadline参数</td>
+<td><a href="docs/ts2d.md">文档</a></td>
+</tr>
+<tr>
+<td>tms2d</td>
+<td>工具</td>
+<td>将timestamp(单位毫秒)转为UTC+8:00中国日期</td>
+<td><a href="docs/tms2d.md">文档</a></td>
+</tr>
+<tr>
+<td>tns2d</td>
+<td>工具</td>
+<td>将timestamp(单位100纳秒)转为UTC+8:00中国日期</td>
+<td><a href="docs/tns2d.md">文档</a></td>
+</tr>
+<tr>
+<td>d2ts</td>
+<td>工具</td>
+<td>将日期转为timestamp(单位秒)</td>
+<td><a href="docs/d2ts.md">文档</a></td>
+</tr>
+<tr>
+<td>ip</td>
+<td>工具</td>
+<td>根据淘宝的公开API查询ip地址的地理位置</td>
+<td><a href="docs/ip.md">文档</a></td>
+</tr>
+<tr>
+<td>unzip</td>
+<td>工具</td>
+<td>解压zip文件，支持UTF-8编码和GBK编码</td>
+<td><a href="docs/unzip.md">文档</a></td>
+</tr>
+<tr>
+<td>alilistbucket</td>
+<td>第三方</td>
+<td>列举阿里OSS空间里面的所有文件</td>
+<td><a href="docs/alilistbucket.md">文档</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="项目编译"><a href="#项目编译" class="headerlink" title="项目编译"></a>项目编译</h2><p>如果对项目编译感兴趣，请按照如下方式进行：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ <span class="keyword">go</span> <span class="built_in">get</span> github.<span class="keyword">com</span>/astaxie/beego/logs</div><div class="line">$ <span class="keyword">go</span> <span class="built_in">get</span> github.<span class="keyword">com</span>/fsnotify/fsnotify</div><div class="line">$ <span class="keyword">go</span> <span class="built_in">get</span> github.<span class="keyword">com</span>/syndtr/goleveldb/leveldb</div><div class="line">$ <span class="keyword">go</span> <span class="built_in">get</span> github.<span class="keyword">com</span>/yanunon/oss-<span class="keyword">go</span>-api/oss</div><div class="line">$ <span class="keyword">go</span> <span class="built_in">get</span> golang.org/<span class="keyword">x</span>/text/encoding/simplifiedchinese</div><div class="line">$ <span class="keyword">go</span> <span class="built_in">get</span> golang.org/<span class="keyword">x</span>/sys/unix</div><div class="line">$ ./build.<span class="keyword">sh</span></div></pre></td></tr></table></figure>
+<p>如果上面的 <code>golang.org/x</code>  下面的包因为被墙而无法下载，那么可以使用 <code>git clone</code> 分别将依赖的库下载到本地的<code>GOPATH</code>中：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/golang/</span>sys.git  <span class="variable">$GOPATH</span><span class="regexp">/src/g</span>olang.org<span class="regexp">/x/</span>sys</div><div class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/golang/</span>text.git <span class="variable">$GOPATH</span><span class="regexp">/src/g</span>olang.org<span class="regexp">/x/</span>text</div></pre></td></tr></table></figure>
+<p>对于跨平台的编译脚本 <code>cross-build-main.sh</code> 编译出来的二进制文件存在的已知问题如下：</p>
+<p><a href="https://github.com/qiniu/qshell/issues/68" target="_blank" rel="external">crontab下面引用qshell出错</a></p>
+<h2 id="问题反馈"><a href="#问题反馈" class="headerlink" title="问题反馈"></a>问题反馈</h2><p>如果您有任何问题，请写在<a href="https://github.com/qiniu/qshell/issues" target="_blank" rel="external">ISSUE列表</a>里面，我们会尽快回复您。</p>
+<h2 id="技术讨论"><a href="#技术讨论" class="headerlink" title="技术讨论"></a>技术讨论</h2><p>如果您希望和在工作中使用<code>qshell</code>的其他人进行交流，可以加入QQ群：343822521 。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list">
+			 
+        <li class="article-tag-list-item">
+        	<a href="javascript:void(0)" class="article-tag-list-link color2">qshell</a>
+        </li>
+      
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/19/qshell/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-atom shurtcuts" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -328,11 +775,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color1">html5</a>
+                <a href="javascript:void(0)" class="color2">qshell</a>
               </li>
             
             <div class="clearfix"></div>
