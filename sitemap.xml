@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://uxeixs.github.com/2017/03/18/atom%20shurtcuts/</loc>
+    <loc>//litten.me/2017/03/18/atom%20shurtcuts/</loc>
     
-    <lastmod>2017-03-18T08:42:26.098Z</lastmod>
+    <lastmod>2017-03-18T10:26:14.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//litten.me/photos/lazyload.min.js</loc>
+    
+    <lastmod>2017-03-18T09:28:44.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//litten.me/photos/index.html</loc>
+    
+    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//litten.me/photos/ins.css</loc>
+    
+    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//litten.me/photos/ins.json</loc>
+    
+    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//litten.me/photos/ins.js</loc>
+    
+    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
   </url>
   

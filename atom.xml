@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Salt Fish</title>
-  <subtitle>无业游民，中年危机，死宅</subtitle>
+  <title>blue的博客</title>
+  <subtitle>stay hungry stay foolish</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://uxeixs.github.com/"/>
-  <updated>2017-03-18T08:42:26.098Z</updated>
-  <id>http://uxeixs.github.com/</id>
+  <link href="//litten.me/"/>
+  <updated>2017-03-18T10:26:14.954Z</updated>
+  <id>//litten.me/</id>
   
   <author>
-    <name>Ux Eix</name>
-    
+    <name>blue</name>
+    <email>uxeixs@gmail.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>atom shurtcuts</title>
-    <link href="http://uxeixs.github.com/2017/03/18/atom%20shurtcuts/"/>
-    <id>http://uxeixs.github.com/2017/03/18/atom shurtcuts/</id>
+    <title>atom shortcuts</title>
+    <link href="//litten.me/2017/03/18/atom%20shurtcuts/"/>
+    <id>//litten.me/2017/03/18/atom shurtcuts/</id>
     <published>2017-03-18T07:08:25.000Z</published>
-    <updated>2017-03-18T08:42:26.098Z</updated>
+    <updated>2017-03-18T10:26:14.954Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="文件切换"><a href="#文件切换" class="headerlink" title="文件切换"></a>文件切换</h2><p><code>ctrl-shift-s</code>  保存所有打开的文件<br><code>cmd-shift-o</code>  打开目录<br><code>cmd-\</code>   显示或隐藏目录树<br><code>ctrl-0</code>   焦点移到目录树<br>目录树下，使用a，m，delete来增加，修改和删除<br><code>cmd-t</code>或<code>cmd-p</code> 查找文件<br><code>cmd-b</code> 在打开的文件之间切换<br><code>cmd-shift-b</code> 只搜索从上次git commit后修改或者新增的文件  </p>
+    <content type="html"><![CDATA[<h2 id="文件切换"><a href="#文件切换" class="headerlink" title="文件切换"></a>文件切换</h2><p><code>ctrl-shift-s</code>  保存所有打开的文件<br><code>cmd-shift-o</code>  打开目录<br><code>cmd-\</code>   显示或隐藏目录树<br><code>ctrl-0</code>   焦点移到目录树<br>目录树下，使用a，m，delete来增加，修改和删除<br><code>cmd-t</code>或<code>cmd-p</code> 查找文件<br><code>cmd-b</code> 在打开的文件之间切换<br><code>cmd-shift-b</code> 只搜索从上次git commit后修改或者新增的文件<br><a id="more"></a></p>
 <h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><p>（等价于上下左右）<br><code>ctrl-p</code> 前一行<br><code>ctrl-n</code> 后一行<br><code>ctrl-f</code> 前一个字符<br><code>ctrl-b</code> 后一个字符  </p>
 <p><code>alt-B</code>, <code>alt-left</code> 移动到单词开始<br><code>alt-F</code>, <code>alt-right</code> 移动到单词末尾  </p>
 <p><code>cmd-right</code>, <code>ctrl-E</code> 移动到一行结束<br><code>cmd-left</code>, <code>ctrl-A</code>  移动到一行开始  </p>
@@ -68,12 +68,12 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;文件切换&quot;&gt;&lt;a href=&quot;#文件切换&quot; class=&quot;headerlink&quot; title=&quot;文件切换&quot;&gt;&lt;/a&gt;文件切换&lt;/h2&gt;&lt;p&gt;&lt;code&gt;ctrl-shift-s&lt;/code&gt;  保存所有打开的文件&lt;br&gt;&lt;code&gt;cmd-shift-o&lt;/cod
+      &lt;h2 id=&quot;文件切换&quot;&gt;&lt;a href=&quot;#文件切换&quot; class=&quot;headerlink&quot; title=&quot;文件切换&quot;&gt;&lt;/a&gt;文件切换&lt;/h2&gt;&lt;p&gt;&lt;code&gt;ctrl-shift-s&lt;/code&gt;  保存所有打开的文件&lt;br&gt;&lt;code&gt;cmd-shift-o&lt;/code&gt;  打开目录&lt;br&gt;&lt;code&gt;cmd-\&lt;/code&gt;   显示或隐藏目录树&lt;br&gt;&lt;code&gt;ctrl-0&lt;/code&gt;   焦点移到目录树&lt;br&gt;目录树下，使用a，m，delete来增加，修改和删除&lt;br&gt;&lt;code&gt;cmd-t&lt;/code&gt;或&lt;code&gt;cmd-p&lt;/code&gt; 查找文件&lt;br&gt;&lt;code&gt;cmd-b&lt;/code&gt; 在打开的文件之间切换&lt;br&gt;&lt;code&gt;cmd-shift-b&lt;/code&gt; 只搜索从上次git commit后修改或者新增的文件&lt;br&gt;
     
     </summary>
     
     
-      <category term="atom" scheme="http://uxeixs.github.com/tags/atom/"/>
+      <category term="atom" scheme="//litten.me/tags/atom/"/>
     
   </entry>
   
