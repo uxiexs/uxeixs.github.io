@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//litten.me/"/>
-  <updated>2017-03-18T16:34:15.402Z</updated>
+  <updated>2017-03-18T16:49:37.412Z</updated>
   <id>//litten.me/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="//litten.me/2017/03/19/qshell/"/>
     <id>//litten.me/2017/03/19/qshell/</id>
     <published>2017-03-18T16:08:39.000Z</published>
-    <updated>2017-03-18T16:34:15.402Z</updated>
+    <updated>2017-03-18T16:49:37.412Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>qshell是利用<a href="http://developer.qiniu.com" target="_blank" rel="external">七牛文档上公开的API</a>实现的一个方便开发者测试和使用七牛API服务的命令行工具。该工具设计和开发的主要目的就是帮助开发者快速解决问题。目前该工具融合了七牛存储，CDN，以及其他的一些七牛服务中经常使用到的方法对应的便捷命令，比如b64decode，就是用来解码七牛的URL安全的Base64编码用的，所以这是一个面向开发者的工具，任何新的被认为适合加到该工具中的命令需求，都可以在<a href="https://github.com/qiniu/qshell/issues" target="_blank" rel="external">ISSUE列表</a>里面提出来，我们会尽快评估实现，以帮助大家更好地使用七牛服务。<br><a href="https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l" target="_blank" rel="external"><img src="https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l.png" alt="asciicast"></a><br><a id="more"></a></p>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>qshell是利用<a href="http://developer.qiniu.com" target="_blank" rel="external">七牛文档上公开的API</a>实现的一个方便开发者测试和使用七牛API服务的命令行工具。该工具设计和开发的主要目的就是帮助开发者快速解决问题。目前该工具融合了七牛存储，CDN，以及其他的一些七牛服务中经常使用到的方法对应的便捷命令，比如b64decode，就是用来解码七牛的URL安全的Base64编码用的，所以这是一个面向开发者的工具，任何新的被认为适合加到该工具中的命令需求，都可以在<a href="https://github.com/qiniu/qshell/issues" target="_blank" rel="external">ISSUE列表</a>里面提出来，我们会尽快评估实现，以帮助大家更好地使用七牛服务。</p>
 <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>该工具使用Go语言编写而成，当然为了方便不熟悉Go或者急于使用工具来解决问题的开发者，我们提供了预先编译好的各主流操作系统平台的二进制文件供大家下载使用，由于平台的多样性，我们把这些二进制打包放到一个文件里面，请大家根据下面的说明各自选择合适的版本来使用。在文档中的例子里面，为了方便，我们统一使用<code>qshell</code>这个命令来做介绍。</p>
 <table>
 <thead>
@@ -42,6 +42,7 @@
 </tr>
 </tbody>
 </table>
+<a id="more"></a>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>该工具由于是命令行工具，所以只需要从上面的下载链接下载zip包之后解压即可使用。其中文件名和对应系统关系如下：</p>
 <table>
 <thead>
@@ -105,7 +106,8 @@
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ tree -<span class="selector-tag">a</span></div><div class="line"></div><div class="line">├── env_dev</div><div class="line">│   └── <span class="selector-class">.qshell</span></div><div class="line">│       └── account<span class="selector-class">.json</span></div><div class="line">└── env_prod</div><div class="line">    └── <span class="selector-class">.qshell</span></div><div class="line">        └── account.json</div></pre></td></tr></table></figure>
 <p>这样其他的依赖<code>AccessKey</code>和<code>SecretKey</code>的命令都可以使用<code>-m</code>选项在这个目录下执行命令，例如<code>stat</code>获取文件信息：</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd <span class="regexp">/Users/</span>jemy<span class="regexp">/Temp/</span>qshell<span class="regexp">/workdir/</span>env_dev</div><div class="line">$ qshell -m stat bucket key</div></pre></td></tr></table></figure>
-<h2 id="命令选项"><a href="#命令选项" class="headerlink" title="命令选项"></a>命令选项</h2><p>该工具还有一些有用的选项参数如下：</p>
+<h2 id="命令选项"><a href="#命令选项" class="headerlink" title="命令选项"></a>命令选项</h2><p><a href="https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l" target="_blank" rel="external"><img src="https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l.png" alt="asciicast"></a></p>
+<p>该工具还有一些有用的选项参数如下：</p>
 <table>
 <thead>
 <tr>
@@ -414,7 +416,26 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;qshell是利用&lt;a href=&quot;http://developer.qiniu.com&quot;&gt;七牛文档上公开的API&lt;/a&gt;实现的一个方便开发者测试和使用七牛API服务的命令行工具。该工具设计和开发的主要目的就是帮助开发者快速解决问题。目前该工具融合了七牛存储，CDN，以及其他的一些七牛服务中经常使用到的方法对应的便捷命令，比如b64decode，就是用来解码七牛的URL安全的Base64编码用的，所以这是一个面向开发者的工具，任何新的被认为适合加到该工具中的命令需求，都可以在&lt;a href=&quot;https://github.com/qiniu/qshell/issues&quot;&gt;ISSUE列表&lt;/a&gt;里面提出来，我们会尽快评估实现，以帮助大家更好地使用七牛服务。&lt;br&gt;&lt;a href=&quot;https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l&quot;&gt;&lt;img src=&quot;https://asciinema.org/a/3l4d74sb2s01lwbt2y3k83p5l.png&quot; alt=&quot;asciicast&quot;&gt;&lt;/a&gt;&lt;br&gt;
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;qshell是利用&lt;a href=&quot;http://developer.qiniu.com&quot;&gt;七牛文档上公开的API&lt;/a&gt;实现的一个方便开发者测试和使用七牛API服务的命令行工具。该工具设计和开发的主要目的就是帮助开发者快速解决问题。目前该工具融合了七牛存储，CDN，以及其他的一些七牛服务中经常使用到的方法对应的便捷命令，比如b64decode，就是用来解码七牛的URL安全的Base64编码用的，所以这是一个面向开发者的工具，任何新的被认为适合加到该工具中的命令需求，都可以在&lt;a href=&quot;https://github.com/qiniu/qshell/issues&quot;&gt;ISSUE列表&lt;/a&gt;里面提出来，我们会尽快评估实现，以帮助大家更好地使用七牛服务。&lt;/p&gt;
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;该工具使用Go语言编写而成，当然为了方便不熟悉Go或者急于使用工具来解决问题的开发者，我们提供了预先编译好的各主流操作系统平台的二进制文件供大家下载使用，由于平台的多样性，我们把这些二进制打包放到一个文件里面，请大家根据下面的说明各自选择合适的版本来使用。在文档中的例子里面，为了方便，我们统一使用&lt;code&gt;qshell&lt;/code&gt;这个命令来做介绍。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;支持平台&lt;/th&gt;
+&lt;th&gt;链接&lt;/th&gt;
+&lt;th&gt;更新日志&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;qshell v2.0.5&lt;/td&gt;
+&lt;td&gt;Linux (32, 64位，arm平台), Windows(32, 64位), Mac OSX(32, 64位)&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://devtools.qiniu.com/qshell-v2.0.5.zip&quot;&gt;下载&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;CHANGELOG.md&quot;&gt;查看&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
     
     </summary>
     
@@ -428,7 +449,7 @@
     <link href="//litten.me/2017/03/18/atom%20shurtcuts/"/>
     <id>//litten.me/2017/03/18/atom shurtcuts/</id>
     <published>2017-03-18T07:08:25.000Z</published>
-    <updated>2017-03-18T16:27:10.276Z</updated>
+    <updated>2017-03-18T16:36:06.378Z</updated>
     
     <content type="html"><![CDATA[<h2 id="文件切换"><a href="#文件切换" class="headerlink" title="文件切换"></a>文件切换</h2><p><code>ctrl-shift-s</code>  保存所有打开的文件<br><code>cmd-shift-o</code>  打开目录<br><code>cmd-\</code>   显示或隐藏目录树<br><code>ctrl-0</code>   焦点移到目录树<br>目录树下，使用a，m，delete来增加，修改和删除<br><code>cmd-t</code>或<code>cmd-p</code> 查找文件<br><code>cmd-b</code> 在打开的文件之间切换<br><code>cmd-shift-b</code> 只搜索从上次git commit后修改或者新增的文件<br><a id="more"></a></p>
 <h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><p>（等价于上下左右）<br><code>ctrl-p</code> 前一行<br><code>ctrl-n</code> 后一行<br><code>ctrl-f</code> 前一个字符<br><code>ctrl-b</code> 后一个字符  </p>
