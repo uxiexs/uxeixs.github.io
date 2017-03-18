@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>miku</title>
+  <title>Salt Fish</title>
   <subtitle>无业游民，中年危机，死宅</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,7 +9,7 @@
   <id>http://uxeixs.github.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Ux Eix</name>
     
   </author>
   
