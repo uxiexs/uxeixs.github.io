@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//litten.me/"/>
-  <updated>2017-03-18T16:49:37.412Z</updated>
+  <updated>2017-03-19T05:14:10.136Z</updated>
   <id>//litten.me/</id>
   
   <author>
@@ -14,6 +14,644 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="//litten.me/2017/03/19/chrome-shortcuts/"/>
+    <id>//litten.me/2017/03/19/chrome-shortcuts/</id>
+    <published>2017-03-19T05:10:26.761Z</published>
+    <updated>2017-03-19T05:14:10.136Z</updated>
+    
+    <content type="html"><![CDATA[<p>layout: post<br>title: chrome shortcuts<br>date: 2017-03-19 13:10:26<br>comments: true<br>tags: chrome</p>
+<h1 id="chromeShortcuts"><a href="#chromeShortcuts" class="headerlink" title="chromeShortcuts"></a>chromeShortcuts</h1><p>谷歌快捷键整理:<a href="http://jjboom.net/tool/chromeShortcuts.html" target="_blank" rel="external">在线地址</a></p>
+<p>###png下载<br>下载地址：<a href="https://raw.githubusercontent.com/dianjie/chromeShortcuts/master/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE.png" target="_blank" rel="external">png下载</a></p>
+<h3 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h3><ol>
+<li><a href="#png下载">png下载</a></li>
+<li><a href="#使用开发者工具">使用开发者工具</a></li>
+<li><a href="#开发者工具下的快捷键">开发者工具下的快捷键</a></li>
+<li><a href="#elements">Elements</a></li>
+<li><a href="#标签页和窗口快捷键">标签页和窗口快捷键</a></li>
+<li><a href="#功能快捷键">功能快捷键</a></li>
+<li><a href="#地址栏快捷键">地址栏快捷键</a></li>
+<li><a href="#网页快捷键">网页快捷键</a></li>
+<li><a href="#鼠标快捷键">鼠标快捷键</a></li>
+</ol>
+<a id="more"></a>
+<h3 id="使用开发者工具"><a href="#使用开发者工具" class="headerlink" title="使用开发者工具"></a>使用开发者工具</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开开发者工具（开则关，关则开）</td>
+<td>F12 / Ctrl + Shift + I</td>
+<td>Cmd + Opt + I</td>
+</tr>
+<tr>
+<td>打开/切换查看页面元素和开发者工具</td>
+<td>Ctrl + Shift + C</td>
+<td>Cmd + Opt + C</td>
+</tr>
+<tr>
+<td>打开开发者工具，并将焦点定位到<code>console</code>上（开则关，关则开）</td>
+<td>Ctrl + Shift + J</td>
+<td>Cmd + Opt + J</td>
+</tr>
+</tbody>
+</table>
+<h3 id="开发者工具下的快捷键"><a href="#开发者工具下的快捷键" class="headerlink" title="开发者工具下的快捷键"></a>开发者工具下的快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>显示常规设置</td>
+<td>? / F1</td>
+<td>?</td>
+</tr>
+<tr>
+<td>切换到下一个面板</td>
+<td>Ctrl + ]</td>
+<td>Cmd + ]</td>
+</tr>
+<tr>
+<td>切换到上一个面板</td>
+<td>Ctrl + [</td>
+<td>Cmd + [</td>
+</tr>
+<tr>
+<td>切换到面板历史的下一个记录</td>
+<td>Ctrl + Alt + ]</td>
+<td>Cmd + Opt + ]</td>
+</tr>
+<tr>
+<td>切换到面板历史的上一个记录</td>
+<td>Ctrl + Alt + [</td>
+<td>Cmd + Opt + [</td>
+</tr>
+<tr>
+<td>改变开发者工具的定位位置（右/下）</td>
+<td>Ctrl + Shift + D</td>
+<td>Cmd + Shift + D</td>
+</tr>
+<tr>
+<td>切换设备模式</td>
+<td>Ctrl + Shift + M</td>
+<td>Cmd + Shift + M</td>
+</tr>
+<tr>
+<td>显示或者隐藏<code>console</code>抽屉板块/关闭设置</td>
+<td>Esc</td>
+<td>Esc</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Elements"><a href="#Elements" class="headerlink" title="Elements"></a>Elements</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>撤销修改</td>
+<td>Ctrl + Z</td>
+<td>Cmd + Z</td>
+</tr>
+<tr>
+<td>恢复修改</td>
+<td>Ctrl + Y</td>
+<td>Cmd +Y / Cmd + Shift + Z</td>
+</tr>
+<tr>
+<td>展开/折叠节点</td>
+<td>→/←</td>
+<td>→/←</td>
+</tr>
+<tr>
+<td>展开节点</td>
+<td>双击标签</td>
+<td>双击标签</td>
+</tr>
+<tr>
+<td>展开/折叠节点以及所有节点</td>
+<td>Ctrl + Alt + 标签旁的展开小图标</td>
+<td>Opt + 标签旁的展开小图标</td>
+</tr>
+<tr>
+<td>编辑标签属性</td>
+<td>Enter/双击属性</td>
+<td>Enter/双击属性</td>
+</tr>
+<tr>
+<td>隐藏元素</td>
+<td>H</td>
+<td>H</td>
+</tr>
+<tr>
+<td>切换编辑HTML状态</td>
+<td>F2</td>
+<td>未知</td>
+</tr>
+</tbody>
+</table>
+<h3 id="标签页和窗口快捷键"><a href="#标签页和窗口快捷键" class="headerlink" title="标签页和窗口快捷键"></a>标签页和窗口快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开新窗口</td>
+<td>Ctrl + n</td>
+<td>⌘ + n</td>
+</tr>
+<tr>
+<td>在隐身模式下打开新窗口</td>
+<td>Ctrl + Shift + n</td>
+<td>⌘ + Shift + n</td>
+</tr>
+<tr>
+<td>打开新的标签页，并跳转到该标签页</td>
+<td>Ctrl + t</td>
+<td>⌘ + t</td>
+</tr>
+<tr>
+<td>焦点在url时候新标签页打开</td>
+<td>Alt + Enter</td>
+<td>Cmd + Return(Enter)</td>
+</tr>
+<tr>
+<td>重新打开最后关闭的标签页，并跳转到该标签页</td>
+<td>Ctrl + Shift + t</td>
+<td>⌘ + Shift + t</td>
+</tr>
+<tr>
+<td>跳转到下一个打开的标签页</td>
+<td>Ctrl + Tab 或 Ctrl + PgDn</td>
+<td>⌘ + Option + 向右箭头键</td>
+</tr>
+<tr>
+<td>跳转到上一个打开的标签页</td>
+<td>Ctrl + Shift + Tab 或 Ctrl + PgUp</td>
+<td>⌘ + Option + 向左箭头键</td>
+</tr>
+<tr>
+<td>跳转到特定标签页</td>
+<td>Ctrl + 1 到 Ctrl + 8</td>
+<td>⌘ + 1 到 ⌘ + 8</td>
+</tr>
+<tr>
+<td>跳转到最后一个标签页</td>
+<td>Ctrl + 9</td>
+<td>⌘ + 9</td>
+</tr>
+<tr>
+<td>在当前标签页中打开主页</td>
+<td>Alt + Home</td>
+<td>Option + Home</td>
+</tr>
+<tr>
+<td>打开当前标签页浏览记录中记录的上一个页面</td>
+<td>Alt + 向左箭头键</td>
+<td>⌘ + [ 或 ⌘ + 向左箭头键</td>
+</tr>
+<tr>
+<td>打开当前标签页浏览记录中记录的下一个页面</td>
+<td>Alt + 向右箭头键</td>
+<td>⌘ + ] 或 ⌘ + 向右箭头键</td>
+</tr>
+<tr>
+<td>关闭当前标签页</td>
+<td>Ctrl + w 或 Ctrl + F4</td>
+<td>⌘ + w</td>
+</tr>
+<tr>
+<td>最小化当前窗口</td>
+<td>Alt + 空格键 + n</td>
+<td>⌘ + m</td>
+</tr>
+<tr>
+<td>关闭当前窗口</td>
+<td>Alt + F4</td>
+<td>⌘ + Shift + w</td>
+</tr>
+<tr>
+<td>隐藏 Google Chrome</td>
+<td>未知</td>
+<td>⌘ + h</td>
+</tr>
+<tr>
+<td>退出 Google Chrome</td>
+<td>Ctrl + Shift + q</td>
+<td>⌘ + q</td>
+</tr>
+</tbody>
+</table>
+<h3 id="功能快捷键"><a href="#功能快捷键" class="headerlink" title="功能快捷键"></a>功能快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开“菜单”菜单</td>
+<td>Alt + f、Alt + e 或 F10</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>显示或隐藏书签栏</td>
+<td>Ctrl + Shift + b</td>
+<td>⌘ + Shift + b</td>
+</tr>
+<tr>
+<td>打开书签管理器</td>
+<td>Ctrl + Shift + o</td>
+<td>⌘ + Option + b</td>
+</tr>
+<tr>
+<td>在新标签页中打开“设置”页</td>
+<td>未知</td>
+<td>⌘ + ,</td>
+</tr>
+<tr>
+<td>在新标签页中打开“历史记录”页</td>
+<td>Ctrl + h</td>
+<td>⌘ + y</td>
+</tr>
+<tr>
+<td>在新标签页中打开“下载内容”页</td>
+<td>Ctrl + j</td>
+<td>⌘ + Shift + j</td>
+</tr>
+<tr>
+<td>打开 Chrome 任务管理器</td>
+<td>Shift + Esc</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>将焦点放置在 Chrome 工具栏中的第一项上</td>
+<td>Shift + Alt + t</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>在地址栏、书签栏（若显示）和页面内容之间向前切换焦点</td>
+<td>F6</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>在地址栏、书签栏（若显示）和页面内容之间向后切换焦点</td>
+<td>Shift + F6</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>打开查找栏搜索当前网页</td>
+<td>Ctrl + f 或 F3</td>
+<td>⌘ + f</td>
+</tr>
+<tr>
+<td>跳转到与查找栏中搜索字词相匹配的下一条内容</td>
+<td>Ctrl + g</td>
+<td>⌘ + g</td>
+</tr>
+<tr>
+<td>跳转到与查找栏中搜索字词相匹配的上一条内容</td>
+<td>Ctrl + Shift + g</td>
+<td>⌘ + Shift + g</td>
+</tr>
+<tr>
+<td>打开“清除浏览数据”选项</td>
+<td>Ctrl + Shift + Delete</td>
+<td>⌘ + Shift + Delete</td>
+</tr>
+<tr>
+<td>在新标签页中打开 Chrome 帮助中心</td>
+<td>F1</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>使用其他帐户登录或进入隐身模式</td>
+<td>Ctrl + Shift + m</td>
+<td>⌘ + Shift + m</td>
+</tr>
+<tr>
+<td>打开反馈表单</td>
+<td>Ctrl + Shift + i</td>
+<td>未知</td>
+</tr>
+</tbody>
+</table>
+<h3 id="地址栏快捷键"><a href="#地址栏快捷键" class="headerlink" title="地址栏快捷键"></a>地址栏快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>使用默认搜索引擎进行搜索</td>
+<td>输入搜索字词并按 Enter 键</td>
+<td>输入搜索字词并按 Enter 键</td>
+</tr>
+<tr>
+<td>使用其他搜索引擎进行搜索</td>
+<td>输入搜索引擎名称并按 Tab 键</td>
+<td>输入搜索引擎名称并按 Tab 键</td>
+</tr>
+<tr>
+<td>为网站名称添加 www. 和 .com，并在当前标签页中打开该网站</td>
+<td>输入网站名称并按 Ctrl + Enter 键</td>
+<td>输入网站名称并按 Control + Enter 键</td>
+</tr>
+<tr>
+<td>为网站名称添加 www. 和 .com，并在新标签页中打开该网站</td>
+<td>输入网站名称并按 Alt + Enter 键</td>
+<td>输入网站名称并按 Control + Shift + Enter 键</td>
+</tr>
+<tr>
+<td>跳转到地址栏</td>
+<td>Ctrl + l、Alt + d 或 F6</td>
+<td>⌘ + l</td>
+</tr>
+<tr>
+<td>在新的后台标签页中打开网站</td>
+<td>未知</td>
+<td>输入网址并按 ⌘ + Enter 键</td>
+</tr>
+<tr>
+<td>从页面中的任意位置搜索</td>
+<td>Ctrl + k 或 Ctrl + e</td>
+<td>未知</td>
+</tr>
+</tbody>
+</table>
+<h3 id="网页快捷键"><a href="#网页快捷键" class="headerlink" title="网页快捷键"></a>网页快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开选项以打印当前网页</td>
+<td>Ctrl + p</td>
+<td>⌘ + p</td>
+</tr>
+<tr>
+<td>打开选项以保存当前网页</td>
+<td>Ctrl + s</td>
+<td>⌘ + s</td>
+</tr>
+<tr>
+<td>重新加载当前网页</td>
+<td>F5 或 Ctrl + r</td>
+<td>⌘ + r</td>
+</tr>
+<tr>
+<td>重新加载当前网页（忽略缓存的内容）</td>
+<td>Shift + F5 或 Ctrl + Shift + r</td>
+<td>⌘ + Shift + r</td>
+</tr>
+<tr>
+<td>停止加载网页</td>
+<td>Esc</td>
+<td>Esc</td>
+</tr>
+<tr>
+<td>浏览下一个可点击项</td>
+<td>Tab</td>
+<td>Tab</td>
+</tr>
+<tr>
+<td>浏览上一个可点击项</td>
+<td>Shift + Tab</td>
+<td>Shift + Tab</td>
+</tr>
+<tr>
+<td>使用 Chrome 打开计算机中的文件</td>
+<td>按住 Ctrl + o 键并选择文件</td>
+<td>按住 ⌘ + o 键并选择文件</td>
+</tr>
+<tr>
+<td>显示当前网页的 HTML 源代码（不可修改）</td>
+<td>Ctrl + u</td>
+<td>⌘ + Option + u</td>
+</tr>
+<tr>
+<td>将当前网页保存为书签</td>
+<td>Ctrl + d</td>
+<td>⌘ + d</td>
+</tr>
+<tr>
+<td>将所有打开的标签页以书签的形式保存在新文件夹中</td>
+<td>Ctrl + Shift + d</td>
+<td>⌘ + Shift + d</td>
+</tr>
+<tr>
+<td>开启或关闭全屏模式</td>
+<td>F11</td>
+<td>⌘ + Ctrl + f</td>
+</tr>
+<tr>
+<td>放大网页上的所有内容</td>
+<td>Ctrl 和 +</td>
+<td>⌘ 和 +</td>
+</tr>
+<tr>
+<td>缩小网页上的所有内容</td>
+<td>Ctrl 和 -</td>
+<td>⌘ 和 -</td>
+</tr>
+<tr>
+<td>将网页上的所有内容恢复到默认大小</td>
+<td>Ctrl + 0</td>
+<td>⌘ + 0</td>
+</tr>
+<tr>
+<td>向下滚动网页，一次一个屏幕</td>
+<td>空格键或 PgDn</td>
+<td>空格键</td>
+</tr>
+<tr>
+<td>向上滚动网页，一次一个屏幕</td>
+<td>Shift + 空格键或 PgUp</td>
+<td>Shift + 空格键</td>
+</tr>
+<tr>
+<td>转到网页顶部</td>
+<td>首页（Home）</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>转到网页底部</td>
+<td>末尾（End）</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>将光标移到文本字段中的上一个字词前面</td>
+<td>Ctrl + 向左箭头键</td>
+<td>Option + 向左箭头键</td>
+</tr>
+<tr>
+<td>将光标移到文本字段中的上一个字词后面</td>
+<td>Ctrl + 向右箭头键</td>
+<td>Option + 向右箭头键</td>
+</tr>
+<tr>
+<td>删除文本字段中的上一个字词</td>
+<td>Ctrl + Backspace</td>
+<td>Option + Backspace</td>
+</tr>
+<tr>
+<td>将焦点移到通知上</td>
+<td>Alt + n</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>在通知中允许</td>
+<td>Alt + Shift + a</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>在通知中拒绝</td>
+<td>Alt + Shift + d</td>
+<td>未知</td>
+</tr>
+<tr>
+<td>在当前标签页中打开主页</td>
+<td>Alt + Home</td>
+<td>⌘ + Shift + h</td>
+</tr>
+</tbody>
+</table>
+<h3 id="鼠标快捷键"><a href="#鼠标快捷键" class="headerlink" title="鼠标快捷键"></a>鼠标快捷键</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在当前标签页中打开链接（仅限鼠标）</td>
+<td>将链接拖到标签页中</td>
+<td>将链接拖到标签页中</td>
+</tr>
+<tr>
+<td>在新的后台标签页中打开链接</td>
+<td>按住 Ctrl 键的同时点击链接</td>
+<td>按住 ⌘ 键的同时点击链接</td>
+</tr>
+<tr>
+<td>打开链接，并跳转到该链接</td>
+<td>按住 Ctrl + Shift 键的同时点击链接</td>
+<td>按住 ⌘ + Shift 键的同时点击链接</td>
+</tr>
+<tr>
+<td>打开链接，并跳转到该链接（仅使用鼠标）</td>
+<td>将链接拖到标签栏的空白区域</td>
+<td></td>
+</tr>
+<tr>
+<td>在新窗口中打开链接</td>
+<td>按住 Shift 键的同时点击链接</td>
+<td></td>
+</tr>
+<tr>
+<td>在新窗口中打开标签页（仅使用鼠标）</td>
+<td>将标签页拖出标签栏</td>
+<td></td>
+</tr>
+<tr>
+<td>将标签页移至当前窗口（仅限鼠标）</td>
+<td>将标签页拖到现有窗口中</td>
+<td></td>
+</tr>
+<tr>
+<td>将标签页移回其原始位置</td>
+<td>拖动标签页的同时按 Esc</td>
+<td></td>
+</tr>
+<tr>
+<td>将当前网页保存为书签</td>
+<td>将相应网址拖动到书签栏中</td>
+<td></td>
+</tr>
+<tr>
+<td>下载链接目标</td>
+<td>按住 Alt 键的同时点击链接</td>
+<td>按住 Option 键的同时点击链接</td>
+</tr>
+<tr>
+<td>显示浏览记录</td>
+<td>右键点击“后退”箭头 返回 或“前进”箭头 下一个，或者点击并按住“后退”箭头 返回 或“前进”箭头 下一个</td>
+<td></td>
+</tr>
+<tr>
+<td>最大化或最小化窗口</td>
+<td>双击标签栏的空白区域</td>
+<td></td>
+</tr>
+<tr>
+<td>放大网页上的所有内容</td>
+<td>按住 Ctrl 键的同时向上滚动鼠标滚轮</td>
+<td>按住 ⌘ 键的同时向上滚动鼠标滚轮</td>
+</tr>
+<tr>
+<td>缩小网页上的所有内容</td>
+<td>按住 Ctrl 键的同时向下滚动鼠标滚轮</td>
+<td>按住 ⌘ 键的同时向下滚动鼠标滚轮</td>
+</tr>
+</tbody>
+</table>
+<h3 id="整理数据引用地址"><a href="#整理数据引用地址" class="headerlink" title="整理数据引用地址"></a>整理数据引用地址</h3><blockquote>
+<p><a href="https://developers.google.com/web/tools/chrome-devtools/shortcuts?utm_source=dcc&amp;utm_medium=redirect&amp;utm_campaign=2016q3" title="https://developers.google.com/web/tools/chrome-devtools/shortcuts?utm_source=dcc&amp;utm_medium=redirect&amp;utm_campaign=2016q3" target="_blank" rel="external">https://developers.google.com/web/tools/chrome-devtools/shortcuts?utm_source=dcc&amp;utm_medium=redirect&amp;utm_campaign=2016q3</a></p>
+<p><a href="https://support.google.com/chrome/answer/157179?hl=zh-Hans" title="https://support.google.com/chrome/answer/157179?hl=zh-Hans" target="_blank" rel="external">https://support.google.com/chrome/answer/157179?hl=zh-Hans</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;layout: post&lt;br&gt;title: chrome shortcuts&lt;br&gt;date: 2017-03-19 13:10:26&lt;br&gt;comments: true&lt;br&gt;tags: chrome&lt;/p&gt;
+&lt;h1 id=&quot;chromeShortcuts&quot;&gt;&lt;a href=&quot;#chromeShortcuts&quot; class=&quot;headerlink&quot; title=&quot;chromeShortcuts&quot;&gt;&lt;/a&gt;chromeShortcuts&lt;/h1&gt;&lt;p&gt;谷歌快捷键整理:&lt;a href=&quot;http://jjboom.net/tool/chromeShortcuts.html&quot;&gt;在线地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;###png下载&lt;br&gt;下载地址：&lt;a href=&quot;https://raw.githubusercontent.com/dianjie/chromeShortcuts/master/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE.png&quot;&gt;png下载&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;导航&quot;&gt;&lt;a href=&quot;#导航&quot; class=&quot;headerlink&quot; title=&quot;导航&quot;&gt;&lt;/a&gt;导航&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#png下载&quot;&gt;png下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#使用开发者工具&quot;&gt;使用开发者工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#开发者工具下的快捷键&quot;&gt;开发者工具下的快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#elements&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#标签页和窗口快捷键&quot;&gt;标签页和窗口快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#功能快捷键&quot;&gt;功能快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#地址栏快捷键&quot;&gt;地址栏快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#网页快捷键&quot;&gt;网页快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#鼠标快捷键&quot;&gt;鼠标快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>qshell</title>
