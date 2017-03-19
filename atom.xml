@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//litten.me/"/>
-  <updated>2017-03-19T05:14:10.136Z</updated>
+  <updated>2017-03-19T05:17:28.884Z</updated>
   <id>//litten.me/</id>
   
   <author>
@@ -16,14 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>chrome shortcuts</title>
     <link href="//litten.me/2017/03/19/chrome-shortcuts/"/>
     <id>//litten.me/2017/03/19/chrome-shortcuts/</id>
-    <published>2017-03-19T05:10:26.761Z</published>
-    <updated>2017-03-19T05:14:10.136Z</updated>
+    <published>2017-03-19T05:10:26.000Z</published>
+    <updated>2017-03-19T05:17:28.884Z</updated>
     
-    <content type="html"><![CDATA[<p>layout: post<br>title: chrome shortcuts<br>date: 2017-03-19 13:10:26<br>comments: true<br>tags: chrome</p>
-<h1 id="chromeShortcuts"><a href="#chromeShortcuts" class="headerlink" title="chromeShortcuts"></a>chromeShortcuts</h1><p>谷歌快捷键整理:<a href="http://jjboom.net/tool/chromeShortcuts.html" target="_blank" rel="external">在线地址</a></p>
+    <content type="html"><![CDATA[<h1 id="chrome-Shortcuts"><a href="#chrome-Shortcuts" class="headerlink" title="chrome Shortcuts"></a>chrome Shortcuts</h1><p>谷歌快捷键整理:<a href="http://jjboom.net/tool/chromeShortcuts.html" target="_blank" rel="external">在线地址</a></p>
 <p>###png下载<br>下载地址：<a href="https://raw.githubusercontent.com/dianjie/chromeShortcuts/master/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE.png" target="_blank" rel="external">png下载</a></p>
 <h3 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h3><ol>
 <li><a href="#png下载">png下载</a></li>
@@ -633,8 +632,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;layout: post&lt;br&gt;title: chrome shortcuts&lt;br&gt;date: 2017-03-19 13:10:26&lt;br&gt;comments: true&lt;br&gt;tags: chrome&lt;/p&gt;
-&lt;h1 id=&quot;chromeShortcuts&quot;&gt;&lt;a href=&quot;#chromeShortcuts&quot; class=&quot;headerlink&quot; title=&quot;chromeShortcuts&quot;&gt;&lt;/a&gt;chromeShortcuts&lt;/h1&gt;&lt;p&gt;谷歌快捷键整理:&lt;a href=&quot;http://jjboom.net/tool/chromeShortcuts.html&quot;&gt;在线地址&lt;/a&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;chrome-Shortcuts&quot;&gt;&lt;a href=&quot;#chrome-Shortcuts&quot; class=&quot;headerlink&quot; title=&quot;chrome Shortcuts&quot;&gt;&lt;/a&gt;chrome Shortcuts&lt;/h1&gt;&lt;p&gt;谷歌快捷键整理:&lt;a href=&quot;http://jjboom.net/tool/chromeShortcuts.html&quot;&gt;在线地址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;###png下载&lt;br&gt;下载地址：&lt;a href=&quot;https://raw.githubusercontent.com/dianjie/chromeShortcuts/master/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE.png&quot;&gt;png下载&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;导航&quot;&gt;&lt;a href=&quot;#导航&quot; class=&quot;headerlink&quot; title=&quot;导航&quot;&gt;&lt;/a&gt;导航&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#png下载&quot;&gt;png下载&lt;/a&gt;&lt;/li&gt;
@@ -650,6 +648,8 @@
     
     </summary>
     
+    
+      <category term="chrome" scheme="//litten.me/tags/chrome/"/>
     
   </entry>
   
