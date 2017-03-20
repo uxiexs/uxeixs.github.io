@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//litten.me/2017/03/20/pandoc/</loc>
+    
+    <lastmod>2017-03-20T10:16:53.134Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//litten.me/2017/03/19/chrome-shortcuts/</loc>
     
     <lastmod>2017-03-20T06:27:55.428Z</lastmod>
@@ -37,14 +44,14 @@
   </url>
   
   <url>
-    <loc>//litten.me/photos/ins.css</loc>
+    <loc>//litten.me/photos/index.html</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>//litten.me/photos/index.html</loc>
+    <loc>//litten.me/photos/ins.css</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
