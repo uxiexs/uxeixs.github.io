@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//litten.me/2017/03/20/%E9%87%91%E5%88%9A%E7%8B%BC3%EF%BC%9A%E6%AE%8A%E6%AD%BB%E4%B8%80%E6%88%98/</loc>
+    
+    <lastmod>2017-03-20T05:42:46.853Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//litten.me/2017/03/19/chrome-shortcuts/</loc>
     
     <lastmod>2017-03-19T05:35:53.114Z</lastmod>
@@ -30,7 +37,7 @@
   </url>
   
   <url>
-    <loc>//litten.me/photos/ins.js</loc>
+    <loc>//litten.me/photos/ins.css</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
@@ -44,7 +51,7 @@
   </url>
   
   <url>
-    <loc>//litten.me/photos/ins.css</loc>
+    <loc>//litten.me/photos/ins.js</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
