@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>blue的博客</title>
+  <title>Blue&#39;s blog</title>
   <subtitle>stay hungry stay foolish</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,7 +9,7 @@
   <id>//litten.me/</id>
   
   <author>
-    <name>blue</name>
+    <name>Blue</name>
     <email>uxeixs@gmail.com</email>
   </author>
   
