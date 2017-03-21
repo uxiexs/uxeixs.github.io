@@ -44,14 +44,7 @@
   </url>
   
   <url>
-    <loc>//litten.me/photos/ins.css</loc>
-    
-    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//litten.me/photos/ins.json</loc>
+    <loc>//litten.me/photos/ins.js</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
@@ -65,7 +58,14 @@
   </url>
   
   <url>
-    <loc>//litten.me/photos/ins.js</loc>
+    <loc>//litten.me/photos/ins.css</loc>
+    
+    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//litten.me/photos/ins.json</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
