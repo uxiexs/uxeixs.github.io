@@ -1,8 +1,4 @@
 @charset "utf-8";
-html::-webkit-scrollbar {width:10px;height:10px;}
-html::-webkit-scrollbar-track-piece {background-color:#f1f1f1;}
-html::-webkit-scrollbar-thumb:vertical {height:5px;background-color:#ff4d3a;}
-html::-webkit-scrollbar-thumb:horizontal {width:10px;background-color:#f1f1f1;}
 p.ds-powered-by {display:none}
 #ds-smilies-tooltip ul.ds-smilies-tabs {display:none}
 #ds-smilies-tooltip .ds-smilies-container {padding:15px 15px;height:200px;margin-left:0 !important}
