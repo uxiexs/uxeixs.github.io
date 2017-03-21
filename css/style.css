@@ -940,17 +940,3 @@ pre .deletion {
 .gist .type-csharp .highlight .sc {
   color: #a31515;
 }
-#ds-smilies-tooltip ul.ds-smilies-tabs {
-display: none;
-}
-#ds-smilies-tooltip .ds-smilies-container {
-padding: 15px 15px;
-height: 200px;
-margin-left: 0 !important;
-}
-#ds-smilies-tooltip .ds-smilies-container li {
-width: auto;
-max-width: 100px;
-height: 40px !important;
-margin: 0 7px;
-}
