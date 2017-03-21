@@ -363,25 +363,7 @@
 })();
 </script>
 <script src="//cdn.bootcss.com/instantclick/3.0.1/instantclick.js"></script>
-<script data-no-instant>
-InstantClick.on('change', function(isInitialLoad) {
-  if (isInitialLoad === false) {
-    if (typeof Prism !== 'undefined') Prism.highlightAll(true,null);
-    if (typeof MathJax !== 'undefined') // support MathJax
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-    if (typeof prettyPrint !== 'undefined') // support google code prettify
-      prettyPrint();
-    if (typeof _hmt !== 'undefined')  // support 百度统计
-      _hmt.push(['_trackPageview', location.pathname + location.search]);
-    if (typeof ga !== 'undefined')  // support google analytics
-        ga('send', 'pageview', location.pathname + location.search);
-if (typeof DUOSHUO !== 'undefined') //多说
-DUOSHUO.EmbedThread('.ds-thread');
-
-  }
-});
-InstantClick.init();
-</script</script>
+<script data-no-instant>InstantClick.init();</script>
 
 
 
@@ -437,7 +419,7 @@ InstantClick.init();
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color2">pandoc</a>
+                <a href="javascript:void(0)" class="color2">chrome</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -445,15 +427,15 @@ InstantClick.init();
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="color5">atom</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color2">chrome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color5">atom</a>
+                <a href="javascript:void(0)" class="color2">pandoc</a>
               </li>
             
             <div class="clearfix"></div>
