@@ -6,7 +6,7 @@ html::-webkit-scrollbar-thumb:horizontal {width:10px;background-color:#f1f1f1;}
 p.ds-powered-by {display:none}
 #ds-smilies-tooltip ul.ds-smilies-tabs {display:none}
 #ds-smilies-tooltip .ds-smilies-container {padding:15px 15px;height:200px;margin-left:0 !important}
-#ds-smilies-tooltip .ds-smilies-container li {width:auto;max-width:100px;height:40px !important;margin:0 7px}
+#ds-smilies-tooltip .ds-smilies-container li {width:auto;max-width:200px;height:40px !important;margin:0 7px}
 #ds-thread #ds-reset a.ds-user-name[data-user-id='11039423']:after {content:"男博主";margin-left:6px;font-size:12px;color:#ff4d3a;background:rgba(255,255,255,.35);border-radius:4px;padding:0 3px}
 #ds-thread #ds-reset a.ds-user-name[data-user-id='6339637008465396482']:after {content:"女博主";margin-left:6px;font-size:12px;color:#13bf20;background:rgba(255,255,255,.35);border-radius:4px;padding:0 3px}
 #ds-thread #ds-reset a.ds-user-name[data-user-id='12961804']:after,#ds-thread #ds-reset a.ds-user-name[data-user-id='7138519']:after,#ds-thread #ds-reset a.ds-user-name[data-user-id='6316826978758428000']:after,#ds-thread #ds-reset a.ds-user-name[data-user-id='6223268553022243585']:after {content:"V";margin-left:6px;font-size:12px;color:#ebcd3e;border-radius:3px;padding:1.5px 4px;display:inline-block;margin:0 5px;font-weight:900;background:#ce1b08}#ds-ssr {display:none !important}
