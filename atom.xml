@@ -4,9 +4,9 @@
   <subtitle>stay hungry stay foolish</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="//litten.me/"/>
+  <link href="//colde.cn/"/>
   <updated>2017-03-20T10:16:53.134Z</updated>
-  <id>//litten.me/</id>
+  <id>//colde.cn/</id>
   
   <author>
     <name>Blue</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>pandoc</title>
-    <link href="//litten.me/2017/03/20/pandoc/"/>
-    <id>//litten.me/2017/03/20/pandoc/</id>
+    <link href="//colde.cn/2017/03/20/pandoc/"/>
+    <id>//colde.cn/2017/03/20/pandoc/</id>
     <published>2017-03-20T08:52:26.000Z</published>
     <updated>2017-03-20T10:16:53.134Z</updated>
     
@@ -693,14 +693,14 @@ Blah blah [@smith04; @doe99].
     </summary>
     
     
-      <category term="pandoc" scheme="//litten.me/tags/pandoc/"/>
+      <category term="pandoc" scheme="//colde.cn/tags/pandoc/"/>
     
   </entry>
   
   <entry>
     <title>金刚狼3：殊死一战</title>
-    <link href="//litten.me/2017/03/20/%E9%87%91%E5%88%9A%E7%8B%BC3%EF%BC%9A%E6%AE%8A%E6%AD%BB%E4%B8%80%E6%88%98/"/>
-    <id>//litten.me/2017/03/20/金刚狼3：殊死一战/</id>
+    <link href="//colde.cn/2017/03/20/%E9%87%91%E5%88%9A%E7%8B%BC3%EF%BC%9A%E6%AE%8A%E6%AD%BB%E4%B8%80%E6%88%98/"/>
+    <id>//colde.cn/2017/03/20/金刚狼3：殊死一战/</id>
     <published>2017-03-20T05:39:22.000Z</published>
     <updated>2017-03-20T16:51:59.866Z</updated>
     
@@ -721,14 +721,14 @@ Blah blah [@smith04; @doe99].
     </summary>
     
     
-      <category term="随笔" scheme="//litten.me/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="//colde.cn/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>chrome shortcuts</title>
-    <link href="//litten.me/2017/03/19/chrome-shortcuts/"/>
-    <id>//litten.me/2017/03/19/chrome-shortcuts/</id>
+    <link href="//colde.cn/2017/03/19/chrome-shortcuts/"/>
+    <id>//colde.cn/2017/03/19/chrome-shortcuts/</id>
     <published>2017-03-19T05:10:26.000Z</published>
     <updated>2017-03-20T06:27:55.428Z</updated>
     
@@ -1356,14 +1356,14 @@ Blah blah [@smith04; @doe99].
     </summary>
     
     
-      <category term="chrome" scheme="//litten.me/tags/chrome/"/>
+      <category term="chrome" scheme="//colde.cn/tags/chrome/"/>
     
   </entry>
   
   <entry>
     <title>qshell</title>
-    <link href="//litten.me/2017/03/19/qshell/"/>
-    <id>//litten.me/2017/03/19/qshell/</id>
+    <link href="//colde.cn/2017/03/19/qshell/"/>
+    <id>//colde.cn/2017/03/19/qshell/</id>
     <published>2017-03-18T16:08:39.000Z</published>
     <updated>2017-03-20T06:20:08.950Z</updated>
     
@@ -1785,14 +1785,14 @@ Blah blah [@smith04; @doe99].
     </summary>
     
     
-      <category term="qshell" scheme="//litten.me/tags/qshell/"/>
+      <category term="qshell" scheme="//colde.cn/tags/qshell/"/>
     
   </entry>
   
   <entry>
     <title>atom shortcuts</title>
-    <link href="//litten.me/2017/03/18/atom%20shurtcuts/"/>
-    <id>//litten.me/2017/03/18/atom shurtcuts/</id>
+    <link href="//colde.cn/2017/03/18/atom%20shurtcuts/"/>
+    <id>//colde.cn/2017/03/18/atom shurtcuts/</id>
     <published>2017-03-18T07:08:25.000Z</published>
     <updated>2017-03-18T16:36:06.378Z</updated>
     
@@ -1847,7 +1847,7 @@ Blah blah [@smith04; @doe99].
     </summary>
     
     
-      <category term="atom" scheme="//litten.me/tags/atom/"/>
+      <category term="atom" scheme="//colde.cn/tags/atom/"/>
     
   </entry>
   
