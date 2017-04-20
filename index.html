@@ -179,8 +179,11 @@
       
         <p>在浏览器的默认状态下，如果不开启浏览器的平滑滚动，浏览器的滚动条在鼠标滚轮滚动时，是一顿一顿的，根据鼠标滚轮的不同，每一顿滑动的具体是不一样的，仔细观察就会发现，鼠标滚轮滚动一个刻度，浏览器滚动条直接跳到对应的高度，中间没有任何过渡效果。</p>
 <p>对于一般网页，这种一顿一顿的现象并没有太大的影响。但是当网站需要借助滚到来实现某些效果的时候，例如视差滚动的时候，就会发现这种体验糟糕透了。而且如果页面平滑滚动，也会让人阅读更加舒服，不会有跳动的感觉。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> _ = [<span class="string">"DOMMouseScroll"</span>, <span class="string">"mousewheel"</span>];</div><div class="line">    <span class="keyword">if</span> ($.event.fixHooks)</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> B = _.length; B;) $.event.fixHooks[_[--B]] = $.event.mouseHooks;</div><div class="line">    $.event.special.mousewheel = &#123;</div><div class="line">        <span class="attr">setup</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.addEventListener) &#123;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">var</span> $ = _.length; $;) <span class="keyword">this</span>.addEventListener(_[--$], A, <span class="literal">false</span>)</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">this</span>.onmousewheel = A</div><div class="line">        &#125;,</div><div class="line">        <span class="attr">teardown</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.removeEventListener) &#123;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">var</span> $ = _.length; $;) <span class="keyword">this</span>.removeEventListener(_[--$], A, <span class="literal">false</span>)</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">this</span>.onmousewheel = <span class="literal">null</span></div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">    $.fn.extend(&#123;</div><div class="line">        <span class="attr">mousewheel</span>: <span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</div><div class="line">            <span class="keyword">return</span> $ ? <span class="keyword">this</span>.bind(<span class="string">"mousewheel"</span>, $) : <span class="keyword">this</span>.trigger(<span class="string">"mousewheel"</span>)</div><div class="line">        &#125;,</div><div class="line">        <span class="attr">unmousewheel</span>: <span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.unbind(<span class="string">"mousewheel"</span>, $)</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params">B</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> _ = B || <span class="built_in">window</span>.event,</div><div class="line">            A = [].slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>),</div><div class="line">            D = <span class="number">0</span>,</div><div class="line">            C = <span class="literal">true</span>,</div><div class="line">            E = <span class="number">0</span>,</div><div class="line">            F = <span class="number">0</span>;</div><div class="line">        B = $.event.fix(_);</div><div class="line">        B.type = <span class="string">"mousewheel"</span>;</div><div class="line">        <span class="keyword">if</span> (_.wheelDelta) D = _.wheelDelta / <span class="number">120</span>;</div><div class="line">        <span class="keyword">if</span> (_.detail) D = -_.detail / <span class="number">3</span>;</div><div class="line">        F = D;</div><div class="line">        <span class="keyword">if</span> (_.axis !== <span class="literal">undefined</span> &amp;&amp; _.axis === _.HORIZONTAL_AXIS) &#123;</div><div class="line">            F = <span class="number">0</span>;</div><div class="line">            E = <span class="number">-1</span> * D</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (_.wheelDeltaY !== <span class="literal">undefined</span>) F = _.wheelDeltaY / <span class="number">120</span>;</div><div class="line">        <span class="keyword">if</span> (_.wheelDeltaX !== <span class="literal">undefined</span>) E = <span class="number">-1</span> * _.wheelDeltaX / <span class="number">120</span>;</div><div class="line">        A.unshift(B, D, E, F);</div><div class="line">        <span class="keyword">return</span> ($.event.dispatch || $.event.handle).apply(<span class="keyword">this</span>, A)</div><div class="line">    &#125;</div><div class="line">&#125;)(jQuery);</div></pre></td></tr></table></figure>
-
+<p>在没有插件的情况下，如何来做到平滑效果呢？</p>
+<p>具体代码实现如下：<br>
+        
+          <a class="article-more-a" href="/2017/04/20/网页实现平滑滚动效果/#more">more >></a>
+        
       
 
       
@@ -739,7 +742,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color2">qshell</a>
+                <a href="javascript:void(0)" class="color2">chrome</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -747,11 +750,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color2">chrome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color3">随笔</a>
+                <a href="javascript:void(0)" class="color4">fgo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -759,7 +758,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color4">fgo</a>
+                <a href="javascript:void(0)" class="color2">qshell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
