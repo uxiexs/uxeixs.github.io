@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>//colde.cn/2017/04/20/%E7%BD%91%E9%A1%B5%E5%AE%9E%E7%8E%B0%E5%B9%B3%E6%BB%91%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C/</loc>
+    
+    <lastmod>2017-04-20T05:43:15.882Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>//colde.cn/2017/04/15/%E8%BE%BE%E8%8A%AC%E5%A5%87%E9%85%B1%E4%B8%8E%E4%B8%83%E4%BA%BA%E7%9A%84%E8%B5%9D%E4%BD%9C%E8%8B%B1%E7%81%B5/</loc>
     
     <lastmod>2017-04-15T14:31:09.208Z</lastmod>
@@ -58,13 +65,6 @@
   </url>
   
   <url>
-    <loc>//colde.cn/photos/ins.css</loc>
-    
-    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>//colde.cn/photos/ins.js</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
@@ -73,6 +73,13 @@
   
   <url>
     <loc>//colde.cn/photos/ins.json</loc>
+    
+    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//colde.cn/photos/ins.css</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
